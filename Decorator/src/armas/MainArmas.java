@@ -12,17 +12,17 @@ public class MainArmas {
 
         //Espada com fogo
         bot.vida = 100;
-        System.out.println("Vida do bot: " + bot.vida);
+        System.out.println("\nVida do bot: " + bot.vida);
         espada = new Fogo(espada);
         bot.tirarVida(espada.dano());
         System.out.println("Dano puro da espada + dano de fogo: " + espada.dano() + ", Vida do BOT: " + bot.vida);
 
 
         bot.vida = 100;
-        System.out.println("Vida do bot: " + bot.vida);
+        System.out.println("\nVida do bot: " + bot.vida);
         espada = new Veneno(espada);
         bot.tirarVida(espada.dano());
-        System.out.println("Dano puro da espada + dano de fogo: " + espada.dano() + ", Vida do BOT: " + bot.vida);
+        System.out.println("Dano puro da espada + dano de fogo + veneno: " + espada.dano() + ", Vida do BOT: " + bot.vida);
 
     }
 }
